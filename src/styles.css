@@ -1,0 +1,52 @@
+/*--------------INITIALIZE--------------*/
+
+* {
+    transition-duration: 200ms;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div,
+p,
+.table {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+video {
+    border:0;
+}
+a,a:hover,a:active {
+    text-decoration: none;
+}
+
+/*----------------------------------------*/

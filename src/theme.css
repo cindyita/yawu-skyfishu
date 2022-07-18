@@ -1,0 +1,130 @@
+/*
+* Theme: Skyfishu Theme
+* Autor: Cindyita
+* Company: Yawu.art
+*/
+
+/*---------COLORS-----------*/
+
+:root {
+    --primary: #56B2C6;
+    --primaryLight: rgba(86,178,198,0.5);
+    --secondary: #FAB1CC;
+    --secondaryLight: rgba(250,277,204,0.5);
+    --tertiary: white;
+    --tertiaryLight: rgba(255,255,255,0.5);
+
+    --textPrimary: #443F42;
+    --textSecondary: #6D504B;
+
+    --grey: #9FA8A8;
+    --pinkLight: #FEEAF0;
+}
+
+/*--------------------------*/
+/*----------FONTS-----------*/
+
+@font-face {
+  font-family: animareska;
+  src: url(assets/fonts/aminareska.ttf) format("TrueType");
+}
+
+@font-face {
+  font-family: cherioutline;
+  src: url(assets/fonts/cherioutline.ttf) format("TrueType");
+}
+
+@font-face {
+  font-family: cheriregular;
+  src: url(assets/fonts/cheriregular) format("TrueType");
+}
+
+@font-face {
+  font-family: organicbrand;
+  src: url(assets/fonts/organicbrand.ttf) format("TrueType");
+}
+
+/*--------------------------*/
+/*----------GENERAL---------*/
+
+* {
+    font-family: Myanmar Text, sans-serif;
+}
+
+/*--------------------------*/
+/*-----------TEXT-----------*/
+
+p {
+    font-family: Myanmar Text, sans-serif;
+    color: var(--textPrimary);
+    font-size: 40pt;
+    font-weight: normal;
+}
+p span{
+    font-family: Myanmar Text, sans-serif;
+    color: var(--textPrimary);
+    font-size: 30pt;
+    font-weight: normal;
+}
+
+.menu-primary a {
+    font-family: Myanmar Text, sans-serif;
+    color: var(--primary);
+    font-size: 33pt;
+    font-weight: normal;
+}
+
+h2 {
+    font-family: 'organicbrand';
+    color: var(--primary);
+    font-size: 65pt;
+    font-weight: normal;
+}
+
+h1 {
+    font-family: 'organicbrand';
+    color: var(--secondary);
+    font-size: 65pt;
+    font-weight: normal;
+}
+
+h1.display {
+    font-family: 'cherioutline';
+    color: var(--primary);
+    font-size: 99pt;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px var(--secondary);
+}
+
+h1.title {
+    font-family: 'animareska';
+    color: var(--primary);
+    font-size: 88pt;
+    font-weight: normal;
+}
+
+i {
+    color: var(--primaryLight);
+    font-size: 30px;
+    padding: 10px;
+}
+
+/*--------------------------*/
+/*----------OBJECTS---------*/
+
+    .icon {
+        color: var(--secondary);
+    }
+
+    .box {
+        background-color: var(--tertiaryLight);
+        box-shadow: 2px 2px 2px 5px lightgrey;
+        padding: 5%;
+    }
+
+    hr {
+        border-bottom: 1px solid var(--secondary);
+        margin: 10px 0;
+    }
+
+/*--------------------------*/
