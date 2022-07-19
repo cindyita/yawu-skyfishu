@@ -1,7 +1,63 @@
-<div class="Fonthome">
+<div class="Fonthome home">
 
     <div class="box container">
-        aa
+
+        <div class="slider-primary">
+
+            <swiper
+                [direction]="'vertical'"
+                [pagination]="{
+                clickable: true
+                }"
+                [autoplay]="{
+                    delay: 3500,
+                    disableOnInteraction: false
+                }"
+                [loop]="true"
+                class="mySwiper"
+            >
+
+                <ng-template swiperSlide>
+                    <div class="cont">
+                        <div>
+                            <img src="../../../assets/img/draws/tatsu.png" alt="skyfishu tatsu draw commission">
+                        </div>  
+                    </div>
+                </ng-template>
+
+                <ng-template swiperSlide>
+                    <div class="cont">
+                        <div>
+                            <img src="../../../assets/img/draws/moxxie.png" alt="skyfishu moxxie draw commission">
+                        </div>  
+                    </div>
+                </ng-template>
+
+                <ng-template swiperSlide>
+                    <div class="cont">
+                        <div>
+                            <img src="../../../assets/img/draws/moss.png" alt="skyfishu moss draw commission">
+                        </div>  
+                    </div>
+                </ng-template>
+
+                <ng-template swiperSlide>
+                    <div class="cont">
+                        <div>
+                            <img src="../../../assets/img/draws/caramel.png" alt="skyfishu caramel draw commission">
+                        </div>  
+                    </div>
+                </ng-template>
+
+            </swiper>
+
+        </div>
+        <div class="fontslider-primary d-flex justify-content-center align-items-center">
+            <img src="../../../assets/img/slider-primary/font-slider-primary.png" alt="font slider primary" width="60%">
+        </div>
+
     </div>
+
+        <app-footer></app-footer>
 
 </div>

@@ -54,7 +54,10 @@ body {
     background-image: url('assets/img/font.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: fixed;
+    background-attachment: fixed;
+}
+a:hover {
+    color: var(--tertiary);
 }
 
 /*--------------------------*/
@@ -115,6 +118,18 @@ i {
     padding: 7px 5px 0;
 }
 
+@media (max-width: 600px) {
+    p,
+    p span {
+        font-size: 10pt;
+    }
+
+    a {
+        font-size: 10pt;
+    }
+
+}
+
 /*--------------------------*/
 /*----------MENUS-----------*/
 
@@ -135,6 +150,52 @@ i {
     .menu-primary a li P {
         font-size: 13pt;
         color: var(--primary);
+    }
+    .btn-menu div{
+        background-color: var(--secondaryLight);
+        margin: 0 5px;
+        padding: 4px 5px 0;
+        border-radius: 10px;
+    }
+    .btn-menu div:hover,.btn-menu div:active {
+        background-color: var(--secondary);
+    }
+    .btn-menu div i {
+        padding:3px 3px 0;
+        cursor:pointer;
+    }
+    .socialmedia ul li:hover i{
+        color: var(--primary)
+    }
+
+    .menu-secondary {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+    .menu-secondary a {
+        color: var(--textPrimary);
+        font-weight: bold;
+        font-size: 12pt;
+    }
+    .socialmedia-footer i{
+        color: var(--tertiary);
+    }
+    .socialmedia-footer i:hover{
+        color: var(--textPrimary);
+    }
+
+    @media (max-width: 1024px) {
+        .menu-primary a li P {
+            font-size: 10pt;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .menu-primary a li P {
+            font-size: 12pt;
+        }
     }
 
 /*--------------------------*/

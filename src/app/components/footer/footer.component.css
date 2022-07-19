@@ -1,11 +1,16 @@
 footer {
     background-color: var(--secondary);
-    padding: 20px 0;
+    padding: 50px 0 20px;
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top:100px;
-    position: absolute;
-    bottom:0;
     width:100%;
+    position:absolute;
+    bottom:0;
+    z-index:5;
+}
+footer div {
+    margin: 7px 0;
 }

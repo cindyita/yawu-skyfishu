@@ -3,12 +3,19 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-credits',
   template: `
-    <p [ngClass]="classMenu">
-      {{title}} @ {{year}} Created by
-      <a href="https://yawu.art">Yawu.art</a>
+    <p class="credits" [ngClass]="classMenu">
+      <a class="d-block">
+          {{title}} @ {{year}} Created by
+        <a href="https://yawu.art">Yawu.art</a>
+      </a>
+      
     </p>
   `,
-  styles: [``]
+  styles: [`
+    .credits a {
+      text-decoration: none;
+    }
+  `]
 })
 export class CreditsComponent implements OnInit {
 

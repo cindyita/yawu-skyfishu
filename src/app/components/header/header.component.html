@@ -1,7 +1,28 @@
-<Header class="d-flex justify-content-between">
-    <div class="commissionStatus w-40">
+<Header class="d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center align-items-lg-start">
+    <div class="commissionStatus w-md-100 w-lg-40 d-flex">
         <app-status [classMenu]="'menu-primary'"></app-status>
+
+        <div class="menuMobile d-flex d-lg-none justify-content-end">
+
+            <div class="dropdown dropdown-menu-end">
+
+                <div class="btn-menu" data-bs-toggle="dropdown">
+                    <div>
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column justify-content-center">
+                    <app-menu-primary [ngClass]="'dropdown-menu'" [classMenu]="'menu-primary'"></app-menu-primary>
+                </div>
+                    
+            </div>
+            
+        </div>
+
     </div>
+
+
     <div class="iconWeb w-33">
         <div class="d-flex flex-column justify-content-center align-items-center">
 
@@ -17,7 +38,9 @@
 
         </div>
     </div>
-    <div class="menu w-40 d-flex justify-content-end">
+    <div class="menu d-none d-lg-flex w-40 justify-content-end">
         <app-menu-primary [classMenu]="'menu-primary'"></app-menu-primary>
     </div>
+ 
+
 </Header>

@@ -51,9 +51,34 @@ video {
 ul a,nav a,a,a:hover,a:active {
     text-decoration: none;
 }
+div,p,h1,h2,h3,h4,h5,h6,span {
+    cursor:default;
+}
+a p, a h1,a h2,a h3, a h4, a h5, a h6, a span, a div {
+    cursor:pointer;
+}
 
 /*----------------------------------------*/
 /*-------------SPECIAL CLASS--------------*/
+.lineguides {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    z-index: 999;
+    display:flex;
+}
+.lineguides span{
+    border: 1px solid greenyellow;
+    width: 50%;
+    height: 100%;
+}
+.lineguides div{
+    border: 1px solid greenyellow;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(0,0,0,0.2);
+}
 
 .w-33 {
     width: 33%;
@@ -63,6 +88,12 @@ ul a,nav a,a,a:hover,a:active {
 }
 .w-40 {
     width: 40%;
+}
+
+@media (min-width: 992px) {
+    .w-lg-40 {
+        width: 40%;
+    }
 }
 
 

@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-menu-primary',
   template: `
-    <ul class="m-0 p-0" [ngClass]="classMenu">
+    <ul class="d-flex flex-lg-row flex-column m-0 p-0" [ngClass]="classMenu">
 
       <a class="nav-link" [routerLink]="['/aboutme']" [routerLinkActive]="['actived']">
         <li>

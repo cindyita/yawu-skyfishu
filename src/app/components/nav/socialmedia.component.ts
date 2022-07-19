@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-socialmedia',
   template: `
-    <ul class="m-0 p-0">
+    <ul class="m-0 p-0" [ngClass]="classMenu">
       <li>
         <a href="#">
           <i class="fa-brands fa-twitter"></i>
@@ -24,6 +24,8 @@ import { Component, OnInit } from '@angular/core';
   styles: [``]
 })
 export class SocialmediaComponent implements OnInit {
+
+  @Input() classMenu: String;
 
   constructor() { }
 
