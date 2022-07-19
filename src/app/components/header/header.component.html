@@ -1,1 +1,23 @@
-<p>header works!</p>
+<Header class="d-flex justify-content-between">
+    <div class="commissionStatus w-40">
+        <app-status [classMenu]="'menu-primary'"></app-status>
+    </div>
+    <div class="iconWeb w-33">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+
+            <a href="/">
+                <img src="../../../assets/img/favicon.png" width="40px" height="auto" alt="Skyfishu icon">
+            </a>
+            <a href="/">
+                <img src="../../../assets/img/logo.png" width="200px" alt="Skyfishu logo">
+            </a>
+            <div class="socialmedia">
+                <app-socialmedia></app-socialmedia>
+            </div>
+
+        </div>
+    </div>
+    <div class="menu w-40 d-flex justify-content-end">
+        <app-menu-primary [classMenu]="'menu-primary'"></app-menu-primary>
+    </div>
+</Header>

@@ -12,6 +12,7 @@ Company: Yawu.art
 
 Type: Commission | 
 Code: Closed | 
+Contact client: Lala hoyos (FB/lalitapyon) | 
 Include: design + Art InfoWeb v2 + miniPanel | 
 Price: 30 USD | 
 Payment method: paypal (-1.9 USD) | 

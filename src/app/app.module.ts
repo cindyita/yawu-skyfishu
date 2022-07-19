@@ -23,6 +23,8 @@ import { PrivacypolicyComponent } from './views/require/privacypolicy/privacypol
 import { WebconditionsComponent } from './views/require/webconditions/webconditions.component';
 import { ContactComponent } from './views/require/contact/contact.component';
 import { CreditsComponent } from './components/nav/credits.component';
+import { Error404Component } from './views/error404/error404.component';
+import { SocialmediaComponent } from './components/nav/socialmedia.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,9 @@ import { CreditsComponent } from './components/nav/credits.component';
     PrivacypolicyComponent,
     WebconditionsComponent,
     ContactComponent,
-    CreditsComponent
+    CreditsComponent,
+    Error404Component,
+    SocialmediaComponent
   ],
   imports: [
     BrowserModule,

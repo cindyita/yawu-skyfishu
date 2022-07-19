@@ -10,7 +10,7 @@
     --primary: #56B2C6;
     --primaryLight: rgba(86,178,198,0.5);
     --secondary: #FAB1CC;
-    --secondaryLight: rgba(250,277,204,0.5);
+    --secondaryLight: rgba(250,177,204,0.3);
     --tertiary: white;
     --tertiaryLight: rgba(255,255,255,0.5);
 
@@ -36,7 +36,7 @@
 
 @font-face {
   font-family: cheriregular;
-  src: url(assets/fonts/cheriregular) format("TrueType");
+  src: url(assets/fonts/cheriregular.ttf) format("TrueType");
 }
 
 @font-face {
@@ -50,6 +50,12 @@
 * {
     font-family: Myanmar Text, sans-serif;
 }
+body {
+    background-image: url('assets/img/font.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+}
 
 /*--------------------------*/
 /*-----------TEXT-----------*/
@@ -57,27 +63,27 @@
 p {
     font-family: Myanmar Text, sans-serif;
     color: var(--textPrimary);
-    font-size: 40pt;
+    font-size: 15pt;
     font-weight: normal;
 }
 p span{
     font-family: Myanmar Text, sans-serif;
     color: var(--textPrimary);
-    font-size: 30pt;
+    font-size: 10pt;
     font-weight: normal;
 }
 
-.menu-primary a {
+a {
     font-family: Myanmar Text, sans-serif;
     color: var(--primary);
-    font-size: 33pt;
+    font-size: 15pt;
     font-weight: normal;
 }
 
 h2 {
     font-family: 'organicbrand';
     color: var(--primary);
-    font-size: 65pt;
+    font-size: 45pt;
     font-weight: normal;
 }
 
@@ -91,7 +97,7 @@ h1 {
 h1.display {
     font-family: 'cherioutline';
     color: var(--primary);
-    font-size: 99pt;
+    font-size: 85pt;
     font-weight: normal;
     text-shadow: 1px 1px 1px var(--secondary);
 }
@@ -105,9 +111,31 @@ h1.title {
 
 i {
     color: var(--primaryLight);
-    font-size: 30px;
-    padding: 10px;
+    font-size: 20px;
+    padding: 7px 5px 0;
 }
+
+/*--------------------------*/
+/*----------MENUS-----------*/
+
+    ul {
+      display: flex;
+    }
+
+    .menu-primary a li {
+        background-color: var(--secondaryLight);
+        margin: 0 5px;
+        padding: 6px 10px 0;
+        border-radius: 10px;
+    }
+    .menu-primary a li:hover,
+    .menu-primary a.actived li {
+        background-color: var(--secondary);
+    }
+    .menu-primary a li P {
+        font-size: 13pt;
+        color: var(--primary);
+    }
 
 /*--------------------------*/
 /*----------OBJECTS---------*/
@@ -118,8 +146,8 @@ i {
 
     .box {
         background-color: var(--tertiaryLight);
-        box-shadow: 2px 2px 2px 5px lightgrey;
-        padding: 5%;
+        box-shadow: 1px 1px 5px 1px rgba(15,15,15,0.2);
+        padding: 3%;
     }
 
     hr {
@@ -128,3 +156,4 @@ i {
     }
 
 /*--------------------------*/
+
