@@ -11,7 +11,8 @@ Project: Yawu
 
 Type: Commission | 
 Contact client: Lala hoyos (skyfishu) | 
-Include: web design + Info Web v2 + Mini control panel 
+Include: web design + Info Web v2 + Mini control panel |
+Status: Work in progress
 
 
 
