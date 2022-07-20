@@ -1,27 +1,18 @@
 # Yawu: Skyfishu
 
-Angular version: 14.0.6 | 
-Nodejs version: 16.16.0 (lts)
+Angular version: 14.0.6
 
 ## Autor
 
 Created by: Cindy ita | 
-Company: Yawu.art
+Project: Yawu
 
 ## > Open Order
 
 Type: Commission | 
-Code: Closed | 
-Contact client: Lala hoyos (FB/lalitapyon) | 
-Include: design + Art InfoWeb v2 + miniPanel | 
-Price: 30 USD | 
-Payment method: paypal (-1.9 USD) | 
-Date paid: 20-06-22 | 
-Date start: 25-06-22 (Design) 18-07-22 (frontend) - (backend) | 
-Date end: - | 
-Date maintenance: - 
-Date closed order: - 
-Additional changes: -
+Contact client: Lala hoyos (skyfishu) | 
+Include: web design + Info Web v2 + Mini control panel |
+Status: Work in progress
 
 
 
