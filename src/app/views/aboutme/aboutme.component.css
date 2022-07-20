@@ -13,3 +13,9 @@
 .aboutme .main-content {
     padding-bottom: 400px;
 }
+
+@media (max-width: 600px) {
+    .aboutme .main-content {
+        padding: 15px 15px 400px;
+    }
+}

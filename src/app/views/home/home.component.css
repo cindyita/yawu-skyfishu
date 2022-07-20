@@ -64,6 +64,30 @@
     height: 100%;
 }
 /*-------------------------*/
+@media (min-width: 2560px) {
+    .swiper-slide .cont div {
+        height: 100%;
+        width: 88%;
+    }
+    .swiper-pagination {
+        padding: 0 25% 16% 0;
+    }
+}
+@media (min-width: 1910px) and (max-width: 2559px) {
+    .swiper-slide .cont div {
+        height: 100%;
+        width: 85%;
+    }
+    .swiper-pagination {
+        padding: 0 16% 20% 0;
+    }
+}
+@media (min-width: 1580px) and (max-width: 1910px) {
+    .swiper-pagination {
+        padding: 0 15% 25% 0;
+    }
+}
+
 @media (max-width: 1024px) {
     .swiper-slide .cont div {
         height: 100%;

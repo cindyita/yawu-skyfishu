@@ -45,4 +45,33 @@
     color: var(--secondary);
     font-size: 60pt;
 }
-    
+@media (max-width: 600px) {
+    .commissions .cont-commissions .box div p {
+        font-size: 12pt;
+    }
+    .commissions .cont-commissions .custom-design .box {
+        width: 400px;
+    }
+
+}
+@media (max-width: 400px) {
+    .commissions .cont-commissions .box div p {
+        font-size: 11pt;
+    }
+    .commissions .cont-commissions .box,
+    .commissions .cont-commissions .custom-design .box {
+        width: 300px;
+        padding: 5px;
+    }
+
+}
+@media (max-width: 350px) {
+    .commissions .cont-commissions .half-body .cont-img {
+        width: 100%;
+        height: 230px;
+    }
+    .commissions .cont-commissions .full-body .cont-img {
+        width: 90%;
+        height: 700px;
+    }
+}

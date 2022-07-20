@@ -1,5 +1,4 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { GeturlService } from 'src/app/services/geturl.service';
 
 @Component({
   selector: 'app-aboutme',
@@ -8,17 +7,9 @@ import { GeturlService } from 'src/app/services/geturl.service';
 })
 export class AboutmeComponent implements OnInit {
 
-  @Output() sendUrl = new EventEmitter<string>();
-
-
-  constructor(private geturl: GeturlService) { }
-
-  public url:string = '';
+  constructor() { }
 
   ngOnInit(): void {
-    this.url = this.geturl.getUrl();
-    this.geturl.actualUrl = this.url;
-    console.log(this.url)
   }
 
 }

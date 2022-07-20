@@ -1,5 +1,6 @@
 import { Component} from '@angular/core';
-import { GeturlService } from 'src/app/services/geturl.service';
+import { filter } from 'rxjs/operators';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +10,22 @@ import { GeturlService } from 'src/app/services/geturl.service';
 export class AppComponent{
   
   title = 'skyfishu';
-  public href: string = "hola";
+  currentRoute: any;
 
-  constructor(private geturl: GeturlService) {
-    this.href = this.geturl.actualUrl;
+  constructor(private router: Router) {
+    this.router.events
+      .pipe(filter((event: any) => event instanceof NavigationEnd))
+      .subscribe((event: any) => {
+        this.currentRoute = event.url;
+        console.log(event);
+      });
+  }
+
+  getHome() {
+    if (this.currentRoute == '/' || this.currentRoute == '/home'){
+      return 'fontHome';
+    }
+    return '';
   }
 
 

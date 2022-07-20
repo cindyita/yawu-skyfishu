@@ -7,11 +7,8 @@ import { Router } from '@angular/router';
 export class GeturlService {
 
   public href: string = "";
-  public actualUrl: string = "";
 
-  constructor(private router: Router) {
-    
-   }
+  constructor(private router: Router) { }
 
   getUrl() {
     this.href = this.router.url;
