@@ -1,0 +1,25 @@
+.commissions {
+    position: relative;
+    padding: 0 0 300px;
+}
+.commissions .cont-commissions .cont-img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: top;
+    padding-left: 10px;
+}
+.commissions .cont-commissions .cont-img {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.commissions .cont-commissions .font {
+    width: 70%;
+    height: 90%;
+    background-color: var(--secondary);
+}

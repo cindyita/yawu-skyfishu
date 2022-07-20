@@ -5,13 +5,13 @@ import { Component, Input, OnInit } from '@angular/core';
   template: `
     <ul class="statuscommissions m-0 p-0" [ngClass]="classMenu">
 
-      <a class="nav-link">
+      <a>
         <li>
           <p>Commissions: <b>{{commissionStatus}}</b></p>
         </li>
       </a>
 
-      <a class="nav-link">
+      <a>
         <li>
           <p>Waitlist: <b>{{waitlistStatus}}</b></p>
         </li>
@@ -27,6 +27,7 @@ import { Component, Input, OnInit } from '@angular/core';
   .statuscommissions a p{
     cursor:default;
   }
+
   `]
 })
 export class StatusComponent implements OnInit {

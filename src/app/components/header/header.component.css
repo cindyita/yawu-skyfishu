@@ -7,6 +7,13 @@ header .iconWeb {
     text-align: center;
 }
 
+@media (max-width: 1024px) {
+   header {
+        padding: 25px 3px 10px;
+        width: 100%;
+    } 
+}
+
 @media (max-width: 600px) {
     header {
         padding: 25px 10px 10px;

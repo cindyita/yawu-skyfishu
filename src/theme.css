@@ -16,6 +16,7 @@
 
     --textPrimary: #443F42;
     --textSecondary: #6D504B;
+    --textTitle: #ff85b2;
 
     --grey: #9FA8A8;
     --pinkLight: #FEEAF0;
@@ -59,13 +60,32 @@ body {
 a:hover {
     color: var(--tertiary);
 }
+*::-webkit-scrollbar {
+    -webkit-appearance: none;
+    background-color:transparent;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 20px;
+}
+*::-webkit-scrollbar:vertical {
+    width:5px;
+    position:absolute;
+    right:0;
+    top:0;
+}
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+
 
 /*--------------------------*/
 /*-----------TEXT-----------*/
 
 p {
     font-family: Myanmar Text, sans-serif;
-    color: var(--textPrimary);
+    color: var(--primary);
     font-size: 15pt;
     font-weight: normal;
 }
@@ -86,21 +106,21 @@ a {
 h2 {
     font-family: 'organicbrand';
     color: var(--primary);
-    font-size: 45pt;
+    font-size: 30pt;
     font-weight: normal;
 }
 
 h1 {
     font-family: 'organicbrand';
-    color: var(--secondary);
-    font-size: 65pt;
+    color: var(--textTitle);
+    font-size: 40pt;
     font-weight: normal;
 }
 
 h1.display {
     font-family: 'cherioutline';
     color: var(--primary);
-    font-size: 85pt;
+    font-size: 75pt;
     font-weight: normal;
     text-shadow: 1px 1px 1px var(--secondary);
 }
@@ -136,6 +156,7 @@ i {
     ul {
       display: flex;
     }
+
 
     .menu-primary a li {
         background-color: var(--secondaryLight);
@@ -191,10 +212,26 @@ i {
             font-size: 10pt;
         }
     }
-
-    @media (max-width: 600px) {
+    @media (max-width: 800px) {
         .menu-primary a li P {
+            padding: 2px 0;
             font-size: 12pt;
+        }
+        .menu-secondary a {
+            font-size: 10pt;
+        }
+    }
+
+    @media (max-width: 380px) {
+        .menu-primary a li P {
+            font-size: 8pt;
+            padding: 5px 0;
+        }
+        .menu-secondary a {
+            font-size: 8pt;
+        }
+        .socialmedia-footer i{
+            font-size: 10pt;
         }
     }
 
@@ -212,8 +249,11 @@ i {
     }
 
     hr {
-        border-bottom: 1px solid var(--secondary);
-        margin: 10px 0;
+        border: 2px solid var(--grey);
+        margin: 0;
+        padding:0;
+        opacity:1;
+        width:100%;
     }
 
 /*--------------------------*/

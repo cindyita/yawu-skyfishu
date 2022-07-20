@@ -5,6 +5,9 @@
 .fontslider-primary {
     padding: 70px 0 30px;
 }
+.fontslider-primary img {
+    width: 60%;
+}  
 /*---------------------------*/
 .swiper {
   width: 100%;
@@ -61,3 +64,65 @@
     height: 100%;
 }
 /*-------------------------*/
+@media (max-width: 1024px) {
+    .swiper-slide .cont div {
+        height: 100%;
+        width: 78%;
+    }
+    .swiper-slide .cont div img {
+        height: 90%;
+        padding: 5% 0 0;
+    }
+    .swiper-pagination {
+        padding: 0 7% 35%;
+    }
+}
+@media (max-width: 800px) {
+    .swiper-slide .cont div {
+        height: 100%;
+        width: 77%;
+    }
+    .swiper-slide .cont div img {
+        height: 80%;
+        padding: 5% 0 0;
+    }
+    .swiper-pagination {
+        padding: 0 7% 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .home div.main-content{
+        margin: 10px;
+    }
+    .swiper-slide .cont div {
+        height: 100%;
+        width: 67%;
+    }
+    .swiper-slide .cont div img {
+        height: 70%;
+        padding: 8% 0 0;
+    }
+    .swiper-vertical > .swiper-pagination-bullets, .swiper-pagination-vertical.swiper-pagination-bullets {
+        right: -5px;
+        top: 10px;
+        transform: none;
+    }
+    .fontslider-primary {
+        padding: 70px 0 20px;
+    }
+    .fontslider-primary img {
+        width: 100%;
+    }  
+}
+@media (max-width: 350px) {
+    .swiper-slide .cont div {
+        height: 100%;
+        width: 68%;
+    }
+    .swiper-slide .cont div img {
+        height: 65%;
+        padding: 10% 0 0;
+    }
+  
+}

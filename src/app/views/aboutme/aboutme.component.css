@@ -1,0 +1,15 @@
+.aboutme {
+    position: relative;
+}
+.aboutme .main-content .box .img img {
+    width: 70%;
+}
+.aboutme .main-content .box {
+    padding: 5%;
+}
+.aboutme .main-content .box .text i {
+    color: var(--secondary);
+}
+.aboutme .main-content {
+    padding-bottom: 400px;
+}

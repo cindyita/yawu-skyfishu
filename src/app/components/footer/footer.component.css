@@ -14,3 +14,9 @@ footer {
 footer div {
     margin: 7px 0;
 }
+
+@media (max-width: 380px) {
+    footer div {
+        margin: 3px 0;
+    }
+}
