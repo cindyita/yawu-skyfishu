@@ -1,0 +1,13 @@
+.error404  {
+    position: relative;
+}
+.error404 .main-content {
+    padding-bottom: 400px;
+}
+
+@media (max-width: 600px) {
+    .error404 .main-content {
+        padding: 15px 15px 400px;
+    }
+
+}

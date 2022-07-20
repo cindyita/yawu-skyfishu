@@ -5,17 +5,17 @@ import { Component, Input, OnInit } from '@angular/core';
   template: `
     <ul class="m-0 p-0" [ngClass]="classMenu">
       <li>
-        <a href="#">
+        <a href="https://twitter.com/skyfishu">
           <i class="fa-brands fa-twitter"></i>
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="https://twitch.tv/skyfishu">
           <i class="fa-brands fa-twitch"></i>
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="mailto:xskyfishx@gmail.com">
           <i class="fa-solid fa-envelope"></i>
         </a>
       </li>

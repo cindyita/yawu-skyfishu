@@ -1,0 +1,24 @@
+.tos {
+    position: relative;
+}
+.tos .main-content {
+    padding-bottom: 400px;
+}
+.tos .main-content .text ul li {
+    padding: 10px 0;
+}
+.tos .main-content .text hr {
+    border-bottom: 2px solid var(--secondary);
+    margin: 15px 0;
+}
+.tos .main-content .text ul {
+  list-style-image: url("../../../assets/img/point-tos.png");
+}
+@media (max-width: 600px) {
+    .tos .main-content {
+        padding: 15px 15px 400px;
+    }
+    .tos .main-content .text ul li {
+        padding: 8px 0;
+    }
+}

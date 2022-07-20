@@ -1,0 +1,19 @@
+.portfolio  {
+    position: relative;
+}
+.portfolio .main-content {
+    padding-bottom: 400px;
+}
+.portfolio h2, .portfolio p {
+    color: var(--secondary);
+}
+.portfolio h2 i {
+    color: var(--secondary);
+    font-size: 35px;
+}
+@media (max-width: 600px) {
+    .portfolio .main-content {
+        padding: 15px 15px 400px;
+    }
+
+}
