@@ -7,8 +7,6 @@
     box-sizing: border-box;
 }
 
-div,
-p,
 .table {
     margin: 0;
     padding: 0;
@@ -70,9 +68,11 @@ a p, a h1,a h2,a h3, a h4, a h5, a h6, a span, a div {
 .w-85 { width: 85% !important; }
 .w-90 { width: 90% !important; }
 .w-33 { width: 33% !important; }
+.w-35 { width: 35% !important; }
 .w-10 { width: 10% !important;}
 .w-40 { width: 40% !important; }
 .w-20 { width: 20% !important; }
+.w-60 { width: 60% !important; }
 
 
 
@@ -93,6 +93,7 @@ a p, a h1,a h2,a h3, a h4, a h5, a h6, a span, a div {
 }
 /* LG */
 @media (min-width: 992px) {
+    .w-lg-20 { width: 20% !important; }
     .w-lg-25 { width: 25%!important; }
     .w-lg-50 { width: 50%!important; }
     .w-lg-75 { width: 75%!important; }

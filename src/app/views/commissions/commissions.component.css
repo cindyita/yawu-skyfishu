@@ -1,6 +1,6 @@
 .commissions {
     position: relative;
-    padding: 0 0 300px;
+    padding: 0 0 500px;
 }
 .commissions .cont-commissions .cont-img img {
     width: 100%;
@@ -11,15 +11,38 @@
     padding-left: 10px;
 }
 .commissions .cont-commissions .cont-img {
-    width: 400px;
-    height: 300px;
     position: relative;
     display: flex;
     justify-content: center;
+}
+.commissions .cont-commissions .half-body .cont-img {
+    width: 400px;
+    height: 300px;
     align-items: flex-end;
+}
+.commissions .cont-commissions .full-body .cont-img {
+    width: 400px;
+    height: 800px;
+    align-items: center;
 }
 .commissions .cont-commissions .font {
     width: 70%;
     height: 90%;
     background-color: var(--secondary);
+    box-shadow: 2px 2px 5px 2px lightgrey;
 }
+.commissions .cont-commissions .box {
+    width: 400px;
+}
+.commissions .cont-commissions .custom-design .box {
+    width: 500px;
+}
+.commissions .cont-commissions .box div p{
+    color: var(--textPrimary);
+    font-weight: medium;
+}
+.commissions .cont-commissions .cont-icon i{
+    color: var(--secondary);
+    font-size: 60pt;
+}
+    
