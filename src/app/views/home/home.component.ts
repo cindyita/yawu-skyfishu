@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
 import SwiperCore, { Autoplay, Pagination } from "swiper";
 
 SwiperCore.use([Autoplay, Pagination]);
@@ -12,9 +13,11 @@ SwiperCore.use([Autoplay, Pagination]);
 })
 export class HomeComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit(): void {
   }
+  
 
 }

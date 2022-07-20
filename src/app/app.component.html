@@ -1,4 +1,4 @@
-<div class="w-100 h-100 fontHome">
+<div class="w-100 h-100" [ngClass]="{fontHome: href == '/'}">
 
     <!------Lineas guia para pruebas------>
     <div class="lineguides d-none">
@@ -9,6 +9,7 @@
 
     <app-header></app-header>
     <div class="w-100">
+        {{href}}
         <router-outlet></router-outlet>
     </div>
     
