@@ -59,6 +59,26 @@ a p, a h1,a h2,a h3, a h4, a h5, a h6, a span, a div {
     cursor:pointer;
 }
 
+#loading {
+    display: flex;
+    position: absolute;
+    top:0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    transition-duration: 200ms;
+}
+#loading div {
+    display: flex;
+    position: absolute;
+    top:49%;
+    left: 49%;
+}
+
 /*----------------------------------------*/
 /*-------------CUSTOM WIDTHS--------------*/
 

@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import SwiperCore, { Autoplay, Pagination } from "swiper";
+import SwiperCore, { Autoplay, Lazy, Pagination } from "swiper";
 
-SwiperCore.use([Autoplay, Pagination]);
+SwiperCore.use([Lazy,Autoplay, Pagination]);
 
 
 @Component({
