@@ -1,19 +1,85 @@
-<div class="portfolio">
+<div class="portfolio mt-2">
 
     <div class="main-content">
         
-        <div class="box container">
-            <div class="title mt-5 mb-5 text-center">
-                <h2 class="w-100">
-                    <i class="fa-solid fa-hammer"></i>
-                    UNDER CONSTRUCTION
-                </h2>
-                <p>Sorry, this page is still under construction.</p>
+        <div class="container-fluid">
+            <div>
+                <div class="title mt-5 mt-lg-4 text-center d-flex justify-content-center justify-content-lg-between align-items-center">
+                    <hr class="w-40 d-none d-lg-block">
+                    <h2 class="w-lg-20 w-xl-100">portfolio</h2>
+                    <hr class="w-40 d-none d-lg-block">
+                </div>
+
+                <div class="cont-portfolio d-flex flex-column justify-content-center align-items-center pt-5 mt-4">
+
+                    <div class="d-flex principal flex-wrap">
+
+                        <span class="cont-box" *ngFor="let char of characters let i = index">
+                            <div class="box" data-bs-toggle="modal" [attr.data-bs-target]="'#'+char.img">
+                                <img src="../../../assets/img/draws/{{char.img}}.png" alt="commission skyfishu {{char.name}}">
+                            </div> 
+                        </span>
+
+                    </div>
+
+
+                </div>
+
             </div>
         </div>
 
     </div>
-    
-     <app-footer></app-footer>
+
+
+    <!-------------MODALS--------------->
+    <div class="modals" *ngFor="let char of characters let i = index">
+
+        <div class="modal fade" id="{{char.img}}">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <div class="d-flex justify-content-center w-100">
+                            <h2 class="modal-title">{{char.name}}</h2>
+                        </div>
+                        
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <img src="../../../assets/img/draws/{{char.img}}.png" alt="commission skyfishu {{char.name}}" width="100%">
+                    </div>
+
+                    <div class="modal-footer d-flex justify-content-center">
+
+                        <a href="" *ngIf="char.twitchLink">
+                            <div class="d-flex">
+                                <i class="fa-brands fa-twitch"></i>
+                                <p class="pt-1">{{char.twitchLink}}</p>
+                            </div>
+                        </a>
+                        <a href="" *ngIf="char.twitterLink">
+                            <div class="d-flex">
+                                <i class="fa-brands fa-twitter"></i>
+                                <p class="pt-1">@{{char.twitterLink}}</p>
+                            </div>
+                        </a>
+                        <a href="" *ngIf="char.youtubeLink">
+                            <div class="d-flex">
+                                <i class="fa-brands fa-youtube"></i>
+                                <p class="pt-1">{{char.youtubeLink}}</p>
+                            </div>
+                        </a>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!---------------------------------->
+
+    <app-footer></app-footer>
         
 </div>

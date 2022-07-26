@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { character } from 'src/app/models/principal-characters-model/characters-model.model';
+import { CharactersDataService } from 'src/app/services/characters-data.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  characters:character[] = [];
+
+  constructor(private dataCharacters:CharactersDataService) { 
+
+    this.characters = this.dataCharacters.createCharacters;
+
+  }
 
   ngOnInit(): void {
   }
+
+  principalCharacters:Array<any> = [
+
+  ];
 
 }
