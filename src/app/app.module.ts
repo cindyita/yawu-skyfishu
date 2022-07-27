@@ -25,6 +25,7 @@ import { ContactComponent } from './views/require/contact/contact.component';
 import { CreditsComponent } from './components/nav/credits.component';
 import { Error404Component } from './views/error404/error404.component';
 import { SocialmediaComponent } from './components/nav/socialmedia.component';
+import { FilterPrincipalPipe } from './pipes/filter-principal.pipe';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { SocialmediaComponent } from './components/nav/socialmedia.component';
     ContactComponent,
     CreditsComponent,
     Error404Component,
-    SocialmediaComponent
+    SocialmediaComponent,
+    FilterPrincipalPipe
   ],
   imports: [
     BrowserModule,

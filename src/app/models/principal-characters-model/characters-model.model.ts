@@ -1,6 +1,6 @@
 export class character {
 
-    constructor(img:string, name:string, twitchLink:string, youtubeLink:string, twitterLink:string, font:string, colorPrimary:string, colorSecondary:string, colorTertiary:string,principal:number){
+    constructor(img:string, name:string, twitchLink:string, youtubeLink:string, twitterLink:string, font:string, colorPrimary:string, colorSecondary:string, colorTertiary:string,principal:boolean){
 
         this.img = img;
         this.name = name;
@@ -24,6 +24,6 @@ export class character {
     colorPrimary: string = '';
     colorSecondary: string = '';
     colorTertiary: string = '';
-    principal:number = 0;
+    principal:boolean = false;
 
 }

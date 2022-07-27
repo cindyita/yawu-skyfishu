@@ -10,6 +10,7 @@ import { CharactersDataService } from 'src/app/services/characters-data.service'
 export class PortfolioComponent implements OnInit {
 
   characters:character[] = [];
+  forFilterPrincipal = false;
 
   constructor(private dataCharacters:CharactersDataService) { 
 
@@ -20,8 +21,5 @@ export class PortfolioComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  principalCharacters:Array<any> = [
-
-  ];
 
 }
