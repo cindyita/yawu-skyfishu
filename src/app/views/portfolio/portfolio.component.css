@@ -65,10 +65,13 @@
     .cont-portfolio .principal {
         padding: 0 15%;
     }
+    .cont-portfolio .principal .cont-box {
+        width: 100%;
+    }
     .cont-portfolio .principal .cont-box .box {
         width: 100%;
         height: 500px;
-        margin: 0 5% 10%;
+        margin: 0 5% 5%;
         padding: 20px 0 0 0;
     }
     .cont-portfolio .principal .cont-box .box img{
@@ -84,13 +87,18 @@
 
 @media (max-width: 500px) {
     .cont-portfolio .principal {
-        padding: 0 4%;
+        padding: 0 2%;
+    }
+    .cont-portfolio .principal .cont-box {
+        width: 100%;
+        height: 230px;
+        margin:0 0 8%;
     }
     .cont-portfolio .principal .cont-box .box {
         width: 100%;
         height: 230px;
-        margin: 0 2% 10%;
-        padding: 20px 0 0 0;
+        margin: 0 1% 5%;
+        padding: 10px 0 0 0;
     }
     .cont-portfolio .principal .cont-box .box img{
         padding:20px 0 0 0;
