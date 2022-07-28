@@ -13,7 +13,7 @@ export class CharactersDataService {
     /*
     img:string, name:string, twitchLink:string, youtubeLink:string, twitterLink:string, font:string, colorPrimary:string, colorSecondary:string, colorTertiary:string,principal:number
     */
-    new character('iumi', 'iumi', 'iumi', '', 'iumi', 'iumiFont', 'G', '#F5A0AC', '#C0E9F5', '#9CC2DC', true),
+    new character('iumi', 'iumi', 'Lumetric', '', 'Lumetric', 'iumiFont', 'G', '#F5A0AC', '#C0E9F5', '#9CC2DC', true),
     new character('moxxie', 'Moxxie', 'MoxxieSiix', '', 'Moxxiesiix', 'moxxieFont', 'G', '#4E4440', '#EB9235','#885D9F', true),
     new character('skylar', 'Skylar', 'SkaylarEDM', '', 'SkylarEDM_', 'skylarFont', 'G', '#DB5855', '#DB5855', '#565253', true),
     new character('tatsu', 'Tatsu', 'GoldenTatsu', '', 'GoldenTatsu', 'tatsuFont', 'G', '#E74F41', '#E74F41', '#FE8862', true),
