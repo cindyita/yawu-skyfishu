@@ -1,6 +1,6 @@
 export class character {
 
-    constructor(img:string, name:string, twitchLink:string, youtubeLink:string, twitterLink:string, font:string, colorPrimary:string, colorSecondary:string, colorTertiary:string,principal:boolean){
+    constructor(img: string, name: string, twitchLink: string, youtubeLink: string, twitterLink: string, font: string, fontSize: string, colorPrimary:string, colorSecondary:string, colorTertiary:string,principal:boolean){
 
         this.img = img;
         this.name = name;
@@ -8,6 +8,7 @@ export class character {
         this.youtubeLink = youtubeLink;
         this.twitterLink = twitterLink;
         this.font = font;
+        this.fontSize = fontSize;
         this.colorPrimary = colorPrimary;
         this.colorSecondary = colorSecondary;
         this.colorTertiary = colorTertiary;
@@ -21,6 +22,7 @@ export class character {
     youtubeLink: string = '';
     twitterLink: string = '';
     font: string = '';
+    fontSize: string = '';
     colorPrimary: string = '';
     colorSecondary: string = '';
     colorTertiary: string = '';
