@@ -12,7 +12,7 @@
 
                 <div class="cont-portfolio d-flex flex-column justify-content-center align-items-center pt-5 mt-4">
 
-                    <div class="d-flex principal flex-wrap">
+                    <div class="principal d-flex flex-wrap">
 
                         <span class="cont-box" *ngFor="let char of characters | filterPrincipal let i = index">
                             <div class="box" data-bs-toggle="modal" [attr.data-bs-target]="'#'+char.img">
@@ -20,6 +20,53 @@
                             </div> 
                         </span>
 
+                    </div>
+
+                    <div class="characters d-flex flex-wrap">
+
+                        <span class="d-flex flex-wrap" *ngFor="let char of characters | filterCharacterPortfolio let i = index">
+
+                                <div class="cont-char" [ngClass]="{right: (i % 2) == 0,  left: (i % 2) != 0}">
+
+                                    <div class="img">
+                                       <img src="../../../assets/img/draws/{{char.img}}.png"> 
+                                    </div>
+                                    
+                                    <div class="square">
+                                        <div class="cont-border" [ngStyle]="{'border-color':char.colorSecondary}">
+                                            <h2 [ngStyle]="{'color':char.colorPrimary}">{{char.name}}</h2>
+
+                                            <div class="socialmedia d-flex flex-column" [ngStyle]="{'color':char.colorTertiary}">
+
+                                                <a href="https://www.twitch.tv/{{char.twitchLink}}" *ngIf="char.twitchLink">
+                                                    <div class="d-flex">
+                                                        <i class="fa-brands fa-twitch" [ngStyle]="{color:char.colorSecondary}"></i>
+                                                        <p class="pt-3" [ngStyle]="{color:char.colorSecondary}">{{char.twitchLink}}</p>
+                                                    </div>
+                                                </a>
+                                                
+                                                <a href="https://www.youtube.com/c/{{char.youtubeLink}}" *ngIf="char.youtubeLink">
+                                                    <div class="d-flex">
+                                                        <i class="fa-brands fa-youtube" [ngStyle]="{color:char.colorSecondary}"></i>
+                                                        <p class="pt-3" [ngStyle]="{color:char.colorSecondary}">{{char.youtubeLink}}</p>
+                                                    </div>
+                                                </a>
+
+                                                <a href="https://twitter.com/{{char.twitterLink}}" *ngIf="char.twitterLink">
+                                                    <div class="d-flex">
+                                                        <i class="fa-brands fa-twitter" [ngStyle]="{color:char.colorSecondary}"></i>
+                                                        <p class="pt-3" [ngStyle]="{color:char.colorSecondary}">@{{char.twitterLink}}</p>
+                                                    </div>
+                                                </a>
+                                                
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                        </span>
                     </div>
 
 

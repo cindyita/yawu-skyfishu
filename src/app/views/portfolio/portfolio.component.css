@@ -53,6 +53,112 @@
     text-decoration: none;
 }
 
+/*---------------------------*/
+
+.characters , .characters span{
+    width: 100%;
+    z-index:1;
+}
+.characters span {
+    width: 50%;
+}
+.characters span .cont-char {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.characters span .cont-char .img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    z-index:3;
+}
+.characters span .cont-char.right .img{
+    justify-content: flex-start;
+}
+.characters span .cont-char.left .img{
+    justify-content: flex-end;
+}
+
+.characters span .cont-char .img img {
+    width:85%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    object-position: top;
+}
+.characters span .cont-char .square {
+    background-color: white;
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px lightgrey;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    position: absolute;
+    bottom:0;
+    z-index:2;
+}
+.characters span .cont-char.right .square {
+    right:5%;
+}
+.characters span .cont-char.left .square {
+    left:5%;
+}
+.characters span .cont-char .square .cont-border {
+    width: 91%;
+    height: 85%;
+    border-radius: 10px;
+    border: 4px solid grey;
+    opacity:1;
+    margin-top:5px;
+    position: relative;
+}
+.characters span .cont-char .square .cont-border h2 {
+    position: absolute;
+    top: 15px;
+    font-size: 32pt;
+}
+.characters span .cont-char.right .square .cont-border h2 {
+   right: 16px;
+}
+.characters span .cont-char.left .square .cont-border h2 {
+   left: 16px;
+}
+
+.characters span .cont-char .square .cont-border .socialmedia {
+    position: absolute;
+    bottom:5px;
+}
+.characters span .cont-char.right .square .cont-border .socialmedia {
+   right: 16px;
+}
+.characters span .cont-char.left .square .cont-border .socialmedia {
+   left: 16px;
+}
+.characters span .cont-char .square .cont-border .socialmedia a {
+    text-decoration: none;
+    margin:0;
+    padding:0;
+    line-height: 2pt;
+}
+.characters span .cont-char .square .cont-border .socialmedia a p {
+    font-size: 12pt;
+}
+.characters span .cont-char.right .square .cont-border .socialmedia a div{
+    justify-content: flex-end;
+}
+.characters span .cont-char.left .square .cont-border .socialmedia a div{
+    justify-content: flex-start;
+}
+
 @media (max-width: 600px) {
     .portfolio .main-content {
         padding: 15px 15px 400px;

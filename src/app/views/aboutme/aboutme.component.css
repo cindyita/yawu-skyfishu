@@ -1,6 +1,12 @@
 .aboutme {
     position: relative;
 }
+.aboutme .main-content .box .img {
+    background-image: url('../../../assets/img/slider-primary/font-character.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 85%;
+}
 .aboutme .main-content .box .img img {
     width: 70%;
 }

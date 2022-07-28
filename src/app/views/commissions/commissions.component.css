@@ -16,13 +16,13 @@
     justify-content: center;
 }
 .commissions .cont-commissions .half-body .cont-img {
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 370px;
     align-items: flex-end;
 }
 .commissions .cont-commissions .full-body .cont-img {
-    width: 400px;
-    height: 800px;
+    width: 500px;
+    height: 900px;
     align-items: center;
 }
 .commissions .cont-commissions .font {

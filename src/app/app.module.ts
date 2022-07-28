@@ -26,6 +26,7 @@ import { CreditsComponent } from './components/nav/credits.component';
 import { Error404Component } from './views/error404/error404.component';
 import { SocialmediaComponent } from './components/nav/socialmedia.component';
 import { FilterPrincipalPipe } from './pipes/filter-principal.pipe';
+import { FilterCharacterPortfolioPipe } from './pipes/filter-character-portfolio.pipe';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { FilterPrincipalPipe } from './pipes/filter-principal.pipe';
     CreditsComponent,
     Error404Component,
     SocialmediaComponent,
-    FilterPrincipalPipe
+    FilterPrincipalPipe,
+    FilterCharacterPortfolioPipe
   ],
   imports: [
     BrowserModule,
