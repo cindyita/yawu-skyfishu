@@ -73,7 +73,7 @@
         padding: 0 25% 16% 0;
     }
 }
-@media (min-width: 1910px) and (max-width: 2559px) {
+@media (min-width: 1920px) and (max-width: 2559px) {
     .swiper-slide .cont div {
         height: 100%;
         width: 85%;
@@ -82,7 +82,20 @@
         padding: 0 16% 20% 0;
     }
 }
-@media (min-width: 1580px) and (max-width: 1910px) {
+@media (min-width: 1864px) and (max-width: 1919px) {
+    .swiper-slide .cont div {
+        height: 100%;
+        width: 86%;
+    }
+    .swiper-pagination {
+        padding: 0 16% 20% 0;
+    }
+}
+@media (min-width: 1580px) and (max-width: 1863px) {
+    .swiper-slide .cont div {
+        height: 100%;
+        width: 85%;
+    }
     .swiper-pagination {
         padding: 0 15% 25% 0;
     }

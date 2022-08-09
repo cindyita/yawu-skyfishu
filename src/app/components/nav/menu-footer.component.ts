@@ -4,9 +4,9 @@ import { Component, Input, OnInit } from '@angular/core';
   selector: 'app-menu-footer',
   template: `
     <nav [ngClass]="classMenu">
-      <a href="">Política de privacidad</a>
-      <a href="">Términos y condiciones de la web</a>
-      <a href="">Contacto</a>
+      <!----<a class="nav-link" [routerLink]="['/privacypolicy']">Política de privacidad</a>--->
+      <a class="nav-link" [routerLink]="['/webconditions']">Terms and conditions</a>
+      <!--<a class="nav-link" [routerLink]="['/contact']">Contact</a>-->
     </nav>
   `,
   styles: [``]

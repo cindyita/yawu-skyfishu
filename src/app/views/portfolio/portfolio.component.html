@@ -16,7 +16,7 @@
 
                         <span class="cont-box" *ngFor="let char of characters | filterPrincipal let i = index">
                             <div class="box" data-bs-toggle="modal" [attr.data-bs-target]="'#'+char.img">
-                                <img src="../../../assets/img/draws/{{char.img}}.png" alt="commission skyfishu {{char.name}}">
+                                <img src="../../../assets/img/draws/draws_med/{{char.img}}.png" alt="commission skyfishu {{char.name}}">
                             </div> 
                         </span>
 
@@ -24,12 +24,12 @@
 
                     <div class="characters d-flex flex-wrap">
 
-                        <span class="d-flex flex-wrap" *ngFor="let char of characters | filterCharacterPortfolio let i = index">
+                        <span class="d-flex flex-wrap" *ngFor="let char of characters let i = index">
 
                                 <div class="cont-char" [ngClass]="{right: (i % 2) == 0,  left: (i % 2) != 0}">
 
                                     <div class="img">
-                                       <img src="../../../assets/img/draws/{{char.img}}.png" [ngClass]="{imgM: char.fontSize == 'M'}"> 
+                                       <img src="../../../assets/img/draws/draws_ch/{{char.img}}.png" [ngClass]="{imgM: char.fontSize == 'M'}"> 
                                     </div>
                                     
                                     <div class="square" [ngStyle]="{'background-image':'url(../../../assets/img/draws/fonts/'+char.font+'.png)'}">

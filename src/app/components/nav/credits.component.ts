@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
     <p class="credits" [ngClass]="classMenu">
       <a class="d-block">
           {{title}} @ {{year}} Created by
-        <a href="https://yawu.art">Yawu.art</a>
+        <a href="https://portfolio.cindyita.com">Cindy ita</a>
       </a>
       
     </p>
@@ -26,7 +26,7 @@ export class CreditsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  title = 'skyfishu';
+  title = 'Skyfishu';
   year = 2022;
 
 }

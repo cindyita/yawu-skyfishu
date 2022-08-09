@@ -1,0 +1,22 @@
+.webconditions {
+    position: relative;
+}
+.webconditions .main-content {
+    padding-bottom: 400px;
+}
+.webconditions .main-content .text ul li {
+    padding: 10px 0;
+}
+.webconditions .main-content .text hr {
+    border-bottom: 2px solid var(--secondary);
+    margin: 15px 0;
+}
+    
+@media (max-width: 600px) {
+    .webconditions .main-content {
+        padding: 15px 15px 400px;
+    }
+    .webconditions .main-content .text ul li {
+        padding: 8px 0;
+    }
+}
