@@ -5,8 +5,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FilterCharacterPortfolioPipe implements PipeTransform {
 
-  transform(values: any[], ...args: unknown[]): any[] {
-    return values.filter(v => v.principal == false);
+  transform(value: any, char: string): any {
+    var charActual = char;
+    return value.filter(v => v.principal == true && charActual != v.name);
   }
 
 }

@@ -79,6 +79,127 @@
 
 
     <!-------------MODALS--------------->
+
+    <div class="modals" *ngFor="let char of characters">
+
+        <div class="modal fade" id="{{char.img}}">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                   <button type="button" class="btn-close btnClose-PortfolioSlider" data-bs-dismiss="modal"></button>
+
+                      <swiper
+                            [navigation]="true"
+                            [loop]="true"
+                            class="sliderPortfolio w-100"
+                        >
+
+                        <ng-template swiperSlide active>
+
+                                <div class="modal-header">
+                                    <div class="d-flex justify-content-center w-100">
+                                        <h2 class="modal-title" [ngStyle]="{color:char.colorPrimary}">{{char.name}}</h2>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="modal-body">
+
+
+                                    <img src="../../../assets/img/draws/{{char.img}}.png" alt="commission skyfishu {{char.name}}" width="100%"> 
+
+
+                                    
+                                </div>
+
+                                <div class="modal-footer d-flex justify-content-center">
+
+                                    <a href="https://www.twitch.tv/{{char.twitchLink}}" *ngIf="char.twitchLink">
+                                        <div class="d-flex">
+                                            <i class="fa-brands fa-twitch" [ngStyle]="{color:char.colorTertiary}"></i>
+                                            <p class="pt-1" [ngStyle]="{color:char.colorTertiary}">{{char.twitchLink}}</p>
+                                        </div>
+                                    </a>
+                                    
+                                    <a href="https://www.youtube.com/c/{{char.youtubeLink}}" *ngIf="char.youtubeLink">
+                                        <div class="d-flex">
+                                            <i class="fa-brands fa-youtube" [ngStyle]="{color:char.colorTertiary}"></i>
+                                            <p class="pt-1" [ngStyle]="{color:char.colorTertiary}">{{char.youtubeLink}}</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="https://twitter.com/{{char.twitterLink}}" *ngIf="char.twitterLink">
+                                        <div class="d-flex">
+                                            <i class="fa-brands fa-twitter" [ngStyle]="{color:char.colorTertiary}"></i>
+                                            <p class="pt-1" [ngStyle]="{color:char.colorTertiary}">@{{char.twitterLink}}</p>
+                                        </div>
+                                    </a>
+                                    
+                                </div>
+                                
+                            </ng-template>
+
+                            <ng-template *ngFor="let chars of characters | filterCharacterPortfolio: char.name" swiperSlide>
+
+                                <span>
+                                    <div class="modal-header">
+                                        <div class="d-flex justify-content-center w-100">
+                                            <h2 class="modal-title" [ngStyle]="{color:chars.colorPrimary}">{{chars.name}}</h2>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="modal-body">
+
+
+                                        <img src="../../../assets/img/draws/{{chars.img}}.png" alt="commission skyfishu {{chars.name}}" width="100%"> 
+
+
+                                        
+                                    </div>
+
+                                    <div class="modal-footer d-flex justify-content-center">
+
+                                        <a href="https://www.twitch.tv/{{chars.twitchLink}}" *ngIf="chars.twitchLink">
+                                            <div class="d-flex">
+                                                <i class="fa-brands fa-twitch" [ngStyle]="{color:chars.colorTertiary}"></i>
+                                                <p class="pt-1" [ngStyle]="{color:chars.colorTertiary}">{{chars.twitchLink}}</p>
+                                            </div>
+                                        </a>
+                                        
+                                        <a href="https://www.youtube.com/c/{{chars.youtubeLink}}" *ngIf="chars.youtubeLink">
+                                            <div class="d-flex">
+                                                <i class="fa-brands fa-youtube" [ngStyle]="{color:chars.colorTertiary}"></i>
+                                                <p class="pt-1" [ngStyle]="{color:chars.colorTertiary}">{{chars.youtubeLink}}</p>
+                                            </div>
+                                        </a>
+
+                                        <a href="https://twitter.com/{{chars.twitterLink}}" *ngIf="chars.twitterLink">
+                                            <div class="d-flex">
+                                                <i class="fa-brands fa-twitter" [ngStyle]="{color:chars.colorTertiary}"></i>
+                                                <p class="pt-1" [ngStyle]="{color:chars.colorTertiary}">@{{chars.twitterLink}}</p>
+                                            </div>
+                                        </a>
+                                        
+                                    </div>
+                                </span>
+
+  
+                                
+                            </ng-template>
+
+
+                        </swiper>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+<!-------------
     <div class="modals" *ngFor="let char of characters">
 
         <div class="modal fade" id="{{char.img}}">
@@ -126,7 +247,7 @@
             </div>
         </div>
 
-    </div>
+    </div>---->
     <!---------------------------------->
 
     <app-footer></app-footer>
