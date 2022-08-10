@@ -29,10 +29,10 @@ export class CharactersDataService {
     new character('crystal', 'Crystal', 'CrystalPudding', '', 'CrystalPudding', 'crystalFont', 'G', '#FDB3B6', '#FDB3B6', '#B78364', false),
     new character('plant', 'Plant', 'plantkuroba', '', 'plantkuroba', 'plantFont', 'G', '#b3b01d', '#CDDA2F', '#757769', false),
     new character('bubu', 'Bubu', 'bubucore69', '', 'bubucore69', 'bubuFont', 'M', '#91A45D', '#91A45D', '#C24445', false),
-    new character('misa', 'Misa', 'Chibiterasu', '', 'fioramisa', 'misaFont', 'G', '#91A45D', '#91A45D', '#C24445', false),
-    new character('beaky', 'Beaky', 'beakyVT', '', 'beaky_vt', 'beakyFont', 'G', '#91A45D', '#91A45D', '#C24445', false),
-    new character('solseus', 'Solseus', 'SolseusVT', '', 'solseus', 'solseusFont', 'G', '#91A45D', '#91A45D', '#C24445', false),
-    new character('stargazer', 'Stargazer-018', 'Stargazer018', '', 'stargazer018', 'stargazerFont', 'G', '#91A45D', '#91A45D', '#C24445', false)
+    new character('misa', 'Misa', 'fioramisa', '', 'Chibiterasu', 'misaFont', 'G', '#D33059', '#D33059', '#E48B42', false),
+    new character('beaky', 'Beaky', 'beaky_vt', '', 'beakyVT', 'beakyFont', 'G', '#2D2E32', '#2D2E32', '#E79F2F', false),
+    new character('solseus', 'Solseus', 'solseus', '', 'SolseusVT', 'solseusFont', 'G', '#7FB048', '#7FB048', '#DE6663', false),
+    new character('stargazer', 'Stargazer', 'stargazer018', '', 'Stargazer018', 'stargazerFont', 'G', '#B2395C', '#FFD484', '#D87483', false)
 
   ];
 
