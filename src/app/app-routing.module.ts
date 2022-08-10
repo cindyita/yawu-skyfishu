@@ -11,21 +11,21 @@ import { WebconditionsComponent } from './views/require/webconditions/webconditi
 import { TosComponent } from './views/tos/tos.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'aboutme', component: AboutmeComponent },
-  { path: 'commissions', component: CommissionsComponent },
-  { path: 'portfolio', component: PortfolioComponent },
-  { path: 'tos', component: TosComponent },
-  { path: 'privacypolicy', component: PrivacypolicyComponent },
-  { path: 'webconditions', component: WebconditionsComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: '404', component: Error404Component },
-  { path: '', pathMatch: 'full', redirectTo: 'home' },
-  { path: '**', redirectTo: '404' }
+  { path: 'home', component: HomeComponent, runGuardsAndResolvers: 'always' },
+  { path: 'aboutme', component: AboutmeComponent, runGuardsAndResolvers: 'always' },
+  { path: 'commissions', component: CommissionsComponent, runGuardsAndResolvers: 'always' },
+  { path: 'portfolio', component: PortfolioComponent, runGuardsAndResolvers: 'always' },
+  { path: 'tos', component: TosComponent, runGuardsAndResolvers: 'always' },
+  { path: 'privacypolicy', component: PrivacypolicyComponent, runGuardsAndResolvers: 'always' },
+  { path: 'webconditions', component: WebconditionsComponent, runGuardsAndResolvers: 'always' },
+  { path: 'contact', component: ContactComponent, runGuardsAndResolvers: 'always' },
+  { path: '404', component: Error404Component, runGuardsAndResolvers: 'always' },
+  { path: '', pathMatch: 'full', redirectTo: 'home', runGuardsAndResolvers: 'always' },
+  { path: '**', redirectTo: '404', runGuardsAndResolvers: 'always' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

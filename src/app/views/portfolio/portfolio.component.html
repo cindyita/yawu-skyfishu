@@ -91,11 +91,12 @@
                       <swiper
                             [navigation]="true"
                             [loop]="true"
-                            class="sliderPortfolio w-100"
+                            class="sliderPortfolio w-100 h-100"
                         >
 
-                        <ng-template swiperSlide active>
+                        <ng-template swiperSlide class="active">
 
+                            <span>
                                 <div class="modal-header">
                                     <div class="d-flex justify-content-center w-100">
                                         <h2 class="modal-title" [ngStyle]="{color:char.colorPrimary}">{{char.name}}</h2>
@@ -136,6 +137,7 @@
                                     </a>
                                     
                                 </div>
+                            </span>
                                 
                             </ng-template>
 
