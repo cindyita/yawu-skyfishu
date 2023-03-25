@@ -12,9 +12,6 @@ import { StatusComponent } from './components/nav/status.component';
 import { MenuPrimaryComponent } from './components/nav/menu-primary.component';
 import { MenuFooterComponent } from './components/nav/menu-footer.component';
 import { SliderPrimaryComponent } from './components/slider-primary/slider-primary.component';
-import { LoginComponent } from './adminpanel/views/login/login.component';
-import { PanelComponent } from './adminpanel/views/panel/panel.component';
-import { NavbarComponent } from './adminpanel/components/navbar/navbar.component';
 import { AboutmeComponent } from './views/aboutme/aboutme.component';
 import { CommissionsComponent } from './views/commissions/commissions.component';
 import { PortfolioComponent } from './views/portfolio/portfolio.component';
@@ -27,6 +24,7 @@ import { Error404Component } from './views/error404/error404.component';
 import { SocialmediaComponent } from './components/nav/socialmedia.component';
 import { FilterPrincipalPipe } from './pipes/filter-principal.pipe';
 import { FilterCharacterPortfolioPipe } from './pipes/filter-character-portfolio.pipe';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -38,9 +36,6 @@ import { FilterCharacterPortfolioPipe } from './pipes/filter-character-portfolio
     MenuPrimaryComponent,
     MenuFooterComponent,
     SliderPrimaryComponent,
-    LoginComponent,
-    PanelComponent,
-    NavbarComponent,
     AboutmeComponent,
     CommissionsComponent,
     PortfolioComponent,
@@ -57,7 +52,8 @@ import { FilterCharacterPortfolioPipe } from './pipes/filter-character-portfolio
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SwiperModule
+    SwiperModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

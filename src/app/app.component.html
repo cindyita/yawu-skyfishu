@@ -1,4 +1,4 @@
-<div class="w-100 h-100" [ngClass]="getHome()">
+<div class="w-100 h-100 all" [ngClass]="getHome()">
 
     <!------Lineas guia para pruebas------>
     <div class="lineguides d-none">
@@ -6,6 +6,25 @@
         <span><div></div><div></div></span>
     </div>
     <!------------------------------------>
+
+    <div class="maintenancemode pb-5" *ngIf="maintenanceStatus == 'S'">
+        <div class="iconWeb w-33">
+            <div class="d-flex flex-column justify-content-center align-items-center">
+
+                <a href="/">
+                    <img src="../../../assets/img/favicon.png" width="40px" height="auto" alt="Skyfishu icon">
+                </a>
+                <a href="/">
+                    <img src="../../../assets/img/logo.png" width="200px" alt="Skyfishu logo">
+                </a>
+                <div class="socialmedia">
+                    <app-socialmedia></app-socialmedia>
+                </div>
+
+            </div>
+        </div>
+        <h2>Sorry. The page is not available at the moment</h2>
+    </div>
 
     <app-header></app-header>
     <div class="w-100">

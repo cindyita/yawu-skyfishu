@@ -5,7 +5,6 @@ import SwiperCore, {
   Navigation
 } from "swiper";
 
-// install Swiper modules
 SwiperCore.use([Navigation]);
 
 @Component({

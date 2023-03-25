@@ -11,7 +11,7 @@ export class CharactersDataService {
   createCharacters:character[] = [
 
     /*
-    img:string, name:string, twitchLink:string, youtubeLink:string, twitterLink:string, font:string, colorPrimary:string, colorSecondary:string, colorTertiary:string,principal:number
+    img:string, name:string, twitchLink:string, youtubeLink:string, twitterLink:string, font:string, fontsize, colorPrimary:string, colorSecondary:string, colorTertiary:string,principal:number
     */
     new character('iumi', 'Lumi', 'Lumetric', '', 'Lumetric', 'iumiFont', 'G', '#F5A0AC', '#C0E9F5', '#9CC2DC', true),
     new character('moxxie', 'Moxxie', 'MoxxieSiix', '', 'Moxxiesiix', 'moxxieFont', 'G', '#4E4440', '#EB9235','#885D9F', true),
